@@ -10,7 +10,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y python3 
 RUN dpkg-reconfigure -f noninteractive tzdata
 
 RUN echo "Cloning chiadog"
-RUN git clone --branch dev https://github.com/martomi/chiadog.git \
+RUN git clone --branch dev https://github.com/ajacobson/chiadog.git \
 
 && cd chiadog \
 && python3 -m venv venv \

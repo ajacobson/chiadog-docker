@@ -38,7 +38,7 @@ services:
             - /etc/localtime:/etc/localtime:ro
         restart: unless-stopped
 ```
-Ensure that the directory monted for `/root/.chiadog` include a `config.yaml`.
+Ensure that the directory mounted for `/root/.chiadog` includes a `config.yaml`.
 ## Configuration
 
 The path to `config.yaml` can be passed via the `config_dir` environment variable.  Ensure that your `config.yaml` is on a persistent volume, and the `file_log_consumer` has been configured with a correct absolute path within the container. 

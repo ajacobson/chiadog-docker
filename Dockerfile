@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+ARG BRANCH=main
+
 ENV config_dir=/root/.chiadog/config.yaml
 ENV TZ=UTC
 
@@ -10,7 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y python3 
 RUN dpkg-reconfigure -f noninteractive tzdata
 
 RUN echo "Cloning chiadog"
-RUN git clone https://github.com/martomi/chiadog.git \
+RUN git clone --depth 1 --branch ${BRANCH} https://github.com/martomi/chiadog.git \
 
 && cd chiadog \
 && python3 -m venv venv \

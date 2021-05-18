@@ -28,8 +28,8 @@ docker run --name <container-name> -d ghcr.io/chia-network/chia:latest -v chia-h
 version: "3"
 
 services:
-    chia-dod:
-        container_name: chia-dog
+    chiadog:
+        container_name: chiadog
         image: artjacobson/chiadog-docker:latest
         volumes:
             - ./config:/root/.chiadog

@@ -1,8 +1,8 @@
 version: "3"
 
 services:
-    chia-dog:
-        container_name: chia-dog
+    chiadog:
+        container_name: chiadog
         image: artjacobson/chiadog-docker:latest
         volumes:
             - ./config:/root/.chiadog

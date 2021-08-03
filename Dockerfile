@@ -12,6 +12,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y python3 
 
 RUN dpkg-reconfigure -f noninteractive tzdata
 
+RUN apt-get install -y libsodium-dev
+RUN SODIUM_INSTALL=system pip3 install pynacl
 RUN echo "Cloning chiadog"
 RUN git clone --depth 1 --branch ${BRANCH} ${REPO} \
 

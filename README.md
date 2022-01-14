@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This repository is no longer supported.  As of [this commit](https://github.com/martomi/chiadog/commit/99cf0bb73ab3d944105f0c83509c9713b5ba07d4) Docker is now natively supported in the [Chiadog](https://github.com/martomi/chiadog) repository. Thanks to @Artanicus for making this possible.
+
 # chiadog-docker
 
 ## Overview
